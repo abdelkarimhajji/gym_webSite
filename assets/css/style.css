@@ -1402,9 +1402,15 @@ body {
 .container1
 {
   height: 100vh;
-  background-image: url(../../DSC08601\ \(1\).jpg);
+  /* background-image: url(../../DSC08601\ \(1\).jpg); */
+  /* background-image: url(../../DSC08628.JPG); */
+  /* background-image: url(../../DSC08547.JPG); */
+  /* background-image: url(../../DSC08550\ \(1\).jpg); */
+  background: 
+  linear-gradient(to bottom, rgba(243, 239, 234, 0.8), black 0%, transparent 50%), 
+  url(../../DSC08550\ \(1\).jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -60px;
   background-size: cover;
 }

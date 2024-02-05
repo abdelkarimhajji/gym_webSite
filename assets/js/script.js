@@ -52,3 +52,6 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+
+// add silder
