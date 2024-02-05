@@ -55,3 +55,31 @@ window.addEventListener("scroll", function () {
 
 
 // add silder
+ 
+let home = document.getElementById("home");
+let data = ["DSC08550.jpg", "DSC08601.jpg", "DSC08628.jpg", "DSC08547.jpg"]
+let i = 0;
+
+function updateBackground() {
+
+  // home.style.background = "black";
+  // home.style.backgroundPosition= "center 100px";
+  home.style.transition = "3s all";
+  home.style.backgroundSize = "120% 120%";
+  setTimeout(function() {
+  home.style.background = `linear-gradient(to bottom, rgba(243, 239, 234, 0.8), black 0%, transparent 50%), 
+  url(../../${data[i]})`;
+  home.style.backgroundAttachment= "fixed";
+  home.style.backgroundRepeat= "no-repeat";
+  home.style.backgroundPosition= "center";
+  home.style.backgroundSize = "100% 100%";
+  home.style.transition = "3s all" 
+  home.style.opacity = 1; 
+  i++;
+  if ((data.length - 1) == i)
+    i = 0;
+  }, 1000);
+}
+updateBackground();
+setInterval(updateBackground, 4000);
+
