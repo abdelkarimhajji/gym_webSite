@@ -93,4 +93,4 @@ function removeLoader()
   body.style.overflowY = "scroll"
 }
 
-setTimeout(removeLoader, 1000);
+setTimeout(removeLoader, 3000);
