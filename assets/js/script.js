@@ -68,7 +68,7 @@ function updateBackground() {
   home.style.backgroundSize = "120% 120%";
   setTimeout(function() {
   home.style.background = `linear-gradient(to bottom, rgba(243, 239, 234, 0.8), black 0%, transparent 50%), 
-  url(../../${data[i]})`;
+  url(../assets/images/${data[i]})`;
   home.style.backgroundAttachment= "fixed";
   home.style.backgroundRepeat= "no-repeat";
   home.style.backgroundPosition= "center";
