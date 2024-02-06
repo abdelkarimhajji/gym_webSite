@@ -83,3 +83,14 @@ function updateBackground() {
 updateBackground();
 setInterval(updateBackground, 4000);
 
+// make loader
+
+let containerLoader = document.getElementById("containerLoader");
+let body = document.getElementById("top")
+function removeLoader()
+{
+  containerLoader.style.display = "none";
+  body.style.overflowY = "scroll"
+}
+
+setTimeout(removeLoader, 1000);
